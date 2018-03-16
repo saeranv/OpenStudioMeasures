@@ -2,11 +2,11 @@
   <schema_version>3.0</schema_version>
   <name>add_output_diagnostics</name>
   <uid>cb957503-4a01-42c4-a918-a44df4ea759c</uid>
-  <version_id>045fc5bb-0a03-48f2-b86f-37a96d727792</version_id>
-  <version_modified>20180316T194316Z</version_modified>
+  <version_id>2a794b89-72d4-44d1-b825-5348a14d2df9</version_id>
+  <version_modified>20180316T205013Z</version_modified>
   <xml_checksum>AA6ADD14</xml_checksum>
   <class_name>AddOutputDiagnostics</class_name>
-  <display_name>HackAddOutputDiagnostics</display_name>
+  <display_name>AddOutputDiagnostics</display_name>
   <description>Often the eplusout.err file may request output diagnostics. This measure can be used to add this to the IDF file. Re-run your project to see the requested output.</description>
   <modeler_description>Makes Output:Diagnostics object with choice list for optional values.&#xd;&#xd;&#xd;&#xd;&#xd;
 &#xd;&#xd;&#xd;&#xd;&#xd;
@@ -105,7 +105,7 @@ ReportDetailedWarmupConvergence</modeler_description>
       <filename>measure.rb</filename>
       <filetype>rb</filetype>
       <usage_type>script</usage_type>
-      <checksum>9ED80D16</checksum>
+      <checksum>0F40290D</checksum>
     </file>
   </files>
 </measure>

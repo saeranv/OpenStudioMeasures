@@ -16,7 +16,7 @@ class AddOutputDiagnostics < OpenStudio::Ruleset::WorkspaceUserScript
   #define the name that a user will see, this method may be deprecated as
   #the display name in PAT comes from the name field in measure.xml
   def name
-    return "HackAddOutputDiagnostics"
+    return "AddOutputDiagnostics"
   end
 
   #define the arguments that the user will input
@@ -93,17 +93,6 @@ class AddOutputDiagnostics < OpenStudio::Ruleset::WorkspaceUserScript
     #reporting final condition of model
     finishing_objects = workspace.getObjectsByType("Output:Diagnostics".to_IddObjectType)
     runner.registerFinalCondition("The model finished with #{finishing_objects.size} Output:Diagnostic objects.")
-
-    # totally hacky method of removing extra objects
-
-    #remove objects added with forward translation
-    cls_names = ['LifeCycleCost:Parameters',
-             'LifeCycleCost:UsePriceEscalation',
-             'LifeCycleCost:NonRecurringCost']
-
-    cls_names.each do |cls_name|
-      workspace.getObjectsByType(cls_name.to_IddObjectType).each { |obj| obj.remove }
-    end
 
     return true
 
