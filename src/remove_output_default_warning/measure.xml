@@ -1,0 +1,74 @@
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>remove_output_default_warning</name>
+  <uid>21a54da3-7609-4791-bb69-8e65cf77e012</uid>
+  <version_id>d9adbe90-5d62-403b-81c4-7769527b0e62</version_id>
+  <version_modified>20180316T195758Z</version_modified>
+  <xml_checksum>BB722725</xml_checksum>
+  <class_name>RemoveOutputDefaultWarning</class_name>
+  <display_name>Remove Output Default Warning</display_name>
+  <description>Remove Output Defaults in BIM2BEM</description>
+  <modeler_description>This measure is made to remove default outputs included in every OpenStudio simulation. Use this to make sure users aren't confused by extra warnings in the .err report.</modeler_description>
+  <arguments>
+    <argument>
+      <name>removeOutput</name>
+      <display_name>Remove Output Defaults.</display_name>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>RemoveAll</default_value>
+      <choices>
+        <choice>
+          <value>RemoveAll</value>
+          <display_name>RemoveAll</display_name>
+        </choice>
+      </choices>
+    </argument>
+  </arguments>
+  <outputs/>
+  <provenances/>
+  <tags>
+    <tag>Reporting.QAQC</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>EnergyPlusMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Calibration</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>remove_output_default_warning_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>A5F80DC5</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>2.4.0</identifier>
+        <min_compatible>2.4.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>B469FBB2</checksum>
+    </file>
+  </files>
+</measure>
